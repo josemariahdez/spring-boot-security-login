@@ -39,8 +39,24 @@
 	<build>
 		<plugins>
 			<plugin>
+				<groupId>com.amashchenko.maven.plugin</groupId>
+				<artifactId>gitflow-maven-plugin</artifactId>
+				<version>1.10.0</version>
+				<configuration>
+					<useSnapshotInHotfix>true</useSnapshotInHotfix>
+					<useSnapshotInRelease>true</useSnapshotInRelease>
+					<versionDigitToIncrement>1</versionDigitToIncrement>
+					<pushRemote>true</pushRemote>
+				</configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<finalName>${project.name}</finalName>
+					<executable>true</executable>
+				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
