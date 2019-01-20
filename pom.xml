@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>spring-boot.security.login</groupId>
 	<artifactId>securtiy-login</artifactId>
-	<version>0.0.1-simple-single-sign-on-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>security login</name>
 	<description></description>
 
